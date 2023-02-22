@@ -30,21 +30,6 @@ function oddEven(btn) {
     }
     btn.disabled=true;
 }
-// setTimeout(()=>{
-//     reset()},3000);
-function clear() {
-    btn1.innerHTML="";
-    btn2.innerHTML="";
-    btn3.innerHTML="";
-    btn4.innerHTML="";
-    btn5.innerHTML="";
-    btn6.innerHTML="";
-    btn7.innerHTML="";
-    btn8.innerHTML="";
-    btn9.innerHTML="";
-    document.getElementById("locate").innerHTML="";
-    flag=0;
-}
 function disable() {
     btn1.disabled=true;
     btn2.disabled=true;
@@ -122,43 +107,44 @@ function result(){
 }
 document.getElementById("btn1").addEventListener("click",()=>{
     oddEven(btn1);
-    console.log(btn1.value);
 })
 console.log(clickCount);
 document.getElementById("btn2").addEventListener("click",()=>{
     oddEven(btn2);
-    console.log(btn2.value);
 })
 document.getElementById("btn3").addEventListener("click",()=>{
     oddEven(btn3);
-    console.log(btn3.value);
 })
 document.getElementById("btn4").addEventListener("click",()=>{
     oddEven(btn4);
-    console.log(btn4.value);
 })
 document.getElementById("btn5").addEventListener("click",()=>{
     oddEven(btn5);
-    console.log(btn5.value);
 })
 document.getElementById("btn6").addEventListener("click",()=>{
     oddEven(btn6);
-    console.log(btn6.value);
 })
 document.getElementById("btn7").addEventListener("click",()=>{
     oddEven(btn7);
-    console.log(btn7.value);
 })
 document.getElementById("btn8").addEventListener("click",()=>{
     oddEven(btn8);
-    console.log(btn8.value);
 })
 document.getElementById("btn9").addEventListener("click",()=>{
     oddEven(btn9);
-    console.log(btn9.value);
 })
 
-document.getElementById("reset").addEventListener("click",()=>{
+document.getElementById("start").addEventListener("click",()=>{
     notDisable();
     clickCount=0;
+    console.log("1"+btn1.value);
+    console.log("2"+btn2.value);
+    console.log("3"+btn3.value);
+    console.log("4"+btn4.value);
+    console.log("5"+btn5.value);
+    console.log("6"+btn6.value);
+    console.log("7"+btn7.value);
+    console.log("8"+btn8.value);
+    console.log("9"+btn9.value);
+    document.getElementById("start").disabled=true;
 })
