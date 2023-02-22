@@ -10,30 +10,32 @@
 </head>
 <body>
     <section class="tic-tac-toe-container container mt-5 align-items-center">
-        <h1 class="text-center">Tic-Tac-Toe Game</h1>
-        <div class="row gap-3 my-3">
-            <div class="tic-tac-box col-3 offset-1 bg-success text-center py-3 rounded-3" id="btn1"></div>
-            <div class="tic-tac-box col-3 bg-danger text-center py-3 rounded-3 fs-1" id="btn2"></div>
-            <div class="tic-tac-box col-3 bg-success text-center py-3 rounded-3 fs-1" id="btn3"></div>
+        <h1 class="title text-center">Tic-Tac-Toe Game</h1>
+        <div class="whole">
+            <div class="row d-flex">
+                <div class="tic-tac-box box-1 text-center py-3 border-end border-bottom border-warning border-5" id="btn1"></div>
+                <div class="tic-tac-box box-1 text-center py-3 border-bottom border-warning border-5" id="btn2"></div>
+                <div class="tic-tac-box box-1 text-center py-3 border-start border-bottom border-warning border-5" id="btn3"></div>
+            </div>
+            <div class="row d-flex justify-content-end">
+                <div class="tic-tac-box box-2 text-center py-3 border-end border-warning border-5" id="btn4"></div>
+                <div class="tic-tac-box box-2 text-center py-3 border-warning border-5" id="btn5"></div>
+                <div class="tic-tac-box box-2 text-center py-3 border-start border-warning border-5" id="btn6"></div>
+            </div>
+            <div class="row d-flex">
+                <div class="tic-tac-box box-3 text-center py-3 border-end border-top border-warning border-5" id="btn7"></div>
+                <div class="tic-tac-box box-3 text-center py-3 border-top border-warning border-5" id="btn8"></div>
+                <div class="tic-tac-box box-3 text-center py-3 border-start border-top border-warning border-5" id="btn9"></div>
+            </div>
         </div>
-        <div class="row gap-3 my-3">
-            <div class="tic-tac-box col-3 offset-1 bg-danger text-center py-3 rounded-3 fs-1" id="btn4"></div>
-            <div class="tic-tac-box col-3 bg-success text-center py-3 rounded-3 fs-1" id="btn5"></div>
-            <div class="tic-tac-box col-3 bg-danger text-center py-3 rounded-3 fs-1" id="btn6"></div>
-        </div>
-        <div class="row gap-3 my-3">
-            <div class="tic-tac-box col-3 offset-1 bg-success text-center py-3 rounded-3 fs-1" id="btn7"></div>
-            <div class="tic-tac-box col-3 bg-danger text-center py-3 rounded-3 fs-1" id="btn8"></div>
-            <div class="tic-tac-box col-3 bg-success text-center py-3 rounded-3 fs-1" id="btn9"></div>
-        </div>
-        <div>
-            <button class="btn btn-warning" id="start">Start</button> 
-            <button class="btn btn-warning" onclick="document.location.reload()">Reset</button>
+        <div class="my-2">
+            <button class="btn btn-warning" id="reset" onclick="document.location.reload()">Reset</button>
         </div>
         
-        <div id="locate"></div>
+        <div class=" d-flex justify-content-center text-center" id="locate"></div>
 
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
